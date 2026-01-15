@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>soya restaurant gallery</title>
+    <style>
+        /* 基础样式设置 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* 浅灰色背景，更有质感 */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 标题样式 */
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase; /* 英文全大写 */
+        }
+
+        /* 图片容器：控制在手机端的宽度 */
+        .gallery-container {
+            width: 90%; /* 左右留出一点边距 */
+            max-width: 600px; /* 在平板或电脑上不至于太宽 */
+        }
+
+        /* 图片样式 */
+        .gallery-container img {
+            width: 100%; /* 图片宽度填满容器 */
+            height: auto; /* 高度自动比例 */
+            display: block; /* 消除图片下方的微小间隙 */
+            margin-bottom: 15px; /* 图片之间的距离 */
+            border-radius: 12px; /* 圆角效果，更现代 */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 微弱的阴影 */
+        }
+
+        /* 页脚留白 */
+        .footer-spacer {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>soya restaurant gallery</h1>
+
+    <div class="gallery-container">
+        <img src="photo1.jpg" alt="Gallery Image">
+        <img src="photo2.jpg" alt="Gallery Image">
+        <img src="photo3.jpg" alt="Gallery Image">
+        <img src="photo4.jpg" alt="Gallery Image">
+        </div>
+
+    <div class="footer-spacer"></div>
+
+</body>
+</html>
