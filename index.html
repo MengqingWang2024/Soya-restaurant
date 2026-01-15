@@ -10,10 +10,8 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* 设置为中灰色 */
-            background-color: #777777; 
-            /* 文字使用白色，对比清晰 */
-            color: #ffffff;
+            background-color: #f8f8f8; /* 浅灰色背景，更有质感 */
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,34 +23,29 @@
             margin-bottom: 30px;
             font-size: 24px;
             font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            /* 给文字加一点点阴影，更清晰 */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            letter-spacing: 1px;
+            text-transform: uppercase; /* 英文全大写 */
         }
 
-        /* 图片容器 */
+        /* 图片容器：控制在手机端的宽度 */
         .gallery-container {
-            width: 92%; 
-            max-width: 600px;
+            width: 90%; /* 左右留出一点边距 */
+            max-width: 600px; /* 在平板或电脑上不至于太宽 */
         }
 
         /* 图片样式 */
         .gallery-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            /* 给图片加一个比较明显的深色阴影，在中灰色背景上很有质感 */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            /* 防止图片在加载前显示奇怪的边框 */
-            border: none;
+            width: 100%; /* 图片宽度填满容器 */
+            height: auto; /* 高度自动比例 */
+            display: block; /* 消除图片下方的微小间隙 */
+            margin-bottom: 15px; /* 图片之间的距离 */
+            border-radius: 12px; /* 圆角效果，更现代 */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 微弱的阴影 */
         }
 
         /* 页脚留白 */
         .footer-spacer {
-            height: 60px;
+            height: 50px;
         }
     </style>
 </head>
